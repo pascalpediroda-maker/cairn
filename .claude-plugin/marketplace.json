@@ -14,6 +14,10 @@
       "source": "./supabase-app"
     },
     {
+      "name": "cairn-gtm",
+      "source": "./gtm"
+    },
+    {
       "name": "cairn",
       "source": "./bundle"
     }

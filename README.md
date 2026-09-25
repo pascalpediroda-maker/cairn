@@ -59,7 +59,7 @@ It is the second part that fails.
 | **Fix** | Reproduce first. Fix the cause. Leave the regression test | `debug` |
 | **Review** | Seven axes in parallel, consolidated by severity | `audit` |
 | **Ship** | Row-level security in **both** directions, atomic writes, the deployment traps | `check-rls` + stack agents |
-| **Go to market** | *Not yet generalised — see [Status](#status)* | — |
+| **Go to market** | Coach first: state of play, then the three priorities, then questions. Produces only on an explicit go | `gtm`, `positioning` |
 
 Two more that are not phases:
 
@@ -138,11 +138,12 @@ Pin both models, or a change of default looks exactly like a regression. Measure
 ```
 cairn/
 ├── core/           # the cycle, plus orient and handoff
+├── gtm/            # coach, positioning document
 ├── supabase-app/   # Next.js · Supabase · multi-tenant · AI panel · design tokens
 └── bundle/         # no components, only dependencies
 ```
 
-- `cairn-supabase-app` depends on `cairn-core`.
+- `cairn-gtm` and `cairn-supabase-app` both depend on `cairn-core`.
 - Components are namespaced by plugin — two plugins can ship a skill of the same name without colliding.
 - **The stack layer is opinionated on purpose.** If it is your stack, it beats generic advice. If not, install `cairn-core` alone and the method still holds.
 - **Nothing product-specific ships here** — no table names, no domain vocabulary, no paths from the codebase it came out of.
@@ -155,14 +156,14 @@ Early, and honest about it.
 
 **Shipped**
 
-- The cycle from framing to review — 8 skills, 4 method agents
+- The cycle from framing to go-to-market — 10 skills, 4 method agents
 - The stack layer — 11 agents, the security check
 - Three hooks, including the one that runs the gates
 - Four eval cases
 
 **Not yet**
 
-- The go-to-market layer. It exists in the system this came from; it has not been generalised.
+- A library of commercial plays. `cairn-gtm` ships the coach and the routing; play collections belong to the people who wrote them — install one alongside.
 - Reference skeletons for the stack beyond the security check.
 - Eval suites wired into CI.
 

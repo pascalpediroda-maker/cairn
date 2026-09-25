@@ -1,7 +1,7 @@
 {
   "name": "cairn",
   "displayName": "Cairn",
-  "description": "Installs the method plugin and the Supabase-app architecture plugin together. Carries no components of its own.",
+  "description": "Installs the method plugin, the go-to-market plugin and the Supabase-app architecture plugin together. Carries no components of its own.",
   "author": {
     "name": "Pascal Pediroda"
   },
@@ -14,6 +14,7 @@
   ],
   "dependencies": [
     "cairn-core",
-    "cairn-supabase-app"
+    "cairn-supabase-app",
+    "cairn-gtm"
   ]
 }
