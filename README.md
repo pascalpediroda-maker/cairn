@@ -1,11 +1,11 @@
 # cairn
 
-**An operating system for building a SaaS on your own — opportunity to go-to-market — with an AI assistant that knows how you work.**
+**An operating system for building a SaaS — opportunity to go-to-market — with an AI assistant that knows how you work.**
 
-- **For product builders who ship.** Solo founders, indie operators, Heads of Product who still open the editor.
+- **For product builders who ship.** Founders, small teams, Heads of Product who still open the editor.
 - **Covers the whole cycle**, not just the code: frame → strategy → spec → build → fix → review → ship.
-- **Extracted from a real B2B SaaS**, built and operated by one person. Every rule here cost something first.
-- **Three Claude Code plugins.** Method, stack, bundle. Install one or all.
+- **Extracted from a real B2B SaaS**, built and operated end to end. Every rule here cost something first.
+- **Four Claude Code plugins.** Method, go-to-market, stack, bundle. Install one or all.
 
 ---
 
@@ -38,7 +38,7 @@ claude plugin install cairn-core@cairn
 
 ## The problem
 
-A solo builder frames an opportunity on Monday, writes a spec on Tuesday, migrates a schema on Wednesday, and writes a cold email on Thursday.
+You frame an opportunity on Monday, write a spec on Tuesday, migrate a schema on Wednesday, and write a cold email on Thursday. A small team does the same, with fewer people than roles.
 
 - **Nobody is uniformly good at six crafts.**
 - An AI assistant can carry the weak ones and hold the line on the strong ones.
@@ -97,7 +97,7 @@ Two corollaries run through every file:
 
 ## Where it comes from
 
-Not a prompt library assembled from blog posts. The working system behind a B2B SaaS run by one person: opportunity sizing, positioning, specs, a multi-tenant Next.js and Postgres app, an AI assistant inside the product, deployment on a plain VPS, and the motions that sell it.
+Not a prompt library assembled from blog posts. The working system behind a real B2B SaaS, carried end to end by one person — which is the hardest test of a method, because nothing gets covered by someone else being good at it: opportunity sizing, positioning, specs, a multi-tenant Next.js and Postgres app, an AI assistant inside the product, deployment on a plain VPS, and the motions that sell it.
 
 Three examples of what "it cost something first" means:
 

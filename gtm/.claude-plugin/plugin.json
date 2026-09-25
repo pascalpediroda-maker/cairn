@@ -1,13 +1,21 @@
 {
   "name": "cairn-gtm",
   "displayName": "Cairn — Go to market",
-  "description": "The commercial half of the cycle for a solo builder: a coach that refuses to produce collateral before priorities are settled, and a positioning document the project fills in once and every other piece of work reads from.",
+  "description": "The commercial half of the cycle: a coach that refuses to produce collateral before priorities are settled, and a positioning document the project fills in once and every other piece of work reads from.",
   "author": {
     "name": "Pascal Pediroda"
   },
   "homepage": "https://github.com/pascalpediroda-maker/cairn",
   "repository": "https://github.com/pascalpediroda-maker/cairn",
   "license": "MIT",
-  "keywords": ["claude-code", "go-to-market", "positioning", "b2b-saas", "solo-founder"],
-  "dependencies": ["cairn-core"]
+  "keywords": [
+    "claude-code",
+    "go-to-market",
+    "positioning",
+    "b2b-saas",
+    "product-marketing"
+  ],
+  "dependencies": [
+    "cairn-core"
+  ]
 }
