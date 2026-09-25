@@ -1,6 +1,6 @@
 # cairn
 
-**An operating system for building a SaaS — opportunity to go-to-market — with an AI assistant that knows how you work.**
+**A Claude Code operating system for building a SaaS — opportunity to go-to-market — with an AI assistant that knows how you work.**
 
 - **For product builders who ship.** Founders, small teams, Heads of Product who still open the editor.
 - **Covers the whole cycle**, not just the code: frame → strategy → spec → build → fix → review → ship.
