@@ -124,6 +124,30 @@ neighbouring skills stay out of each other's way, and whether judgement gates ho
 and wait, does it refuse to green-light itself, does it declare honestly what it did not test.
 Everything a script can check is checked by a script instead.
 
+```bash
+claude plugin eval ./core                     # the whole suite
+claude plugin eval ./core --case no-push-without-instruction
+claude plugin eval ./core --ablation none     # half the cost, no control arm — for iterating only
+```
+
+**On native Windows the suite will not run.** Granting `Bash` requires an OS sandbox, and there
+is no backend for one outside WSL2 or Linux — the run is refused rather than executed
+unconfined. That is a reasonable default, and it points at the right home for the suite anyway:
+
+```bash
+claude plugin eval ./core \
+  --trust-plugin \                            # required: no terminal to ask for trust
+  --model claude-sonnet-5 \                   # pin both models, or a default change
+  --judge-model claude-haiku-4-5 \            # looks exactly like a regression
+  --threshold 0.8 --json results.json --no-publish --max-cost-usd 20
+```
+
+Exit code 1 means a case fell below the threshold; 2 means the run was cut short by the cost
+ceiling and the scores are not comparable. Runs marked `partial` stay out of any trend line.
+
+A note on the cost, since it decides whether this is a net or a ritual: one case, six runs, was
+measured at **$0.41 and 74 seconds**. Four cases is a few dollars and under ten minutes.
+
 ---
 
 ## Two illustrations
