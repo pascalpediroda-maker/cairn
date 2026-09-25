@@ -1,0 +1,21 @@
+{
+  "name": "cairn",
+  "description": "Method and architecture plugins for AI-assisted development — lessons moved from documents into hooks and tests.",
+  "owner": {
+    "name": "Pascal Pediroda"
+  },
+  "plugins": [
+    {
+      "name": "cairn-core",
+      "source": "./core"
+    },
+    {
+      "name": "cairn-supabase-app",
+      "source": "./supabase-app"
+    },
+    {
+      "name": "cairn",
+      "source": "./bundle"
+    }
+  ]
+}

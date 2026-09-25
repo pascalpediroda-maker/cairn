@@ -1,0 +1,22 @@
+{
+  "name": "cairn-supabase-app",
+  "displayName": "Cairn — Supabase app",
+  "description": "One opinionated architecture: Next.js, Supabase, multi-tenant workspaces, an AI assistant panel and a token-based design system. Row-Level-Security checks in both directions, reference skeletons a project fills in, and the traps that cost time once.",
+  "author": {
+    "name": "Pascal Pediroda"
+  },
+  "homepage": "https://github.com/pascalpediroda-maker/cairn",
+  "repository": "https://github.com/pascalpediroda-maker/cairn",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "supabase",
+    "nextjs",
+    "rls",
+    "multi-tenant",
+    "design-system"
+  ],
+  "dependencies": [
+    "cairn-core"
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "name": "cairn",
+  "displayName": "Cairn",
+  "description": "Installs the method plugin and the Supabase-app architecture plugin together. Carries no components of its own.",
+  "author": {
+    "name": "Pascal Pediroda"
+  },
+  "homepage": "https://github.com/pascalpediroda-maker/cairn",
+  "repository": "https://github.com/pascalpediroda-maker/cairn",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "bundle"
+  ],
+  "dependencies": [
+    "cairn-core",
+    "cairn-supabase-app"
+  ]
+}

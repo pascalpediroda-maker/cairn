@@ -1,0 +1,18 @@
+{
+  "name": "cairn-core",
+  "displayName": "Cairn — Core",
+  "description": "Working method for AI-assisted development: implementation triage, reproduce-first debugging, multi-perspective specs, audit axes, and the hooks that make the rules fire on their own.",
+  "author": {
+    "name": "Pascal Pediroda"
+  },
+  "homepage": "https://github.com/pascalpediroda-maker/cairn",
+  "repository": "https://github.com/pascalpediroda-maker/cairn",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "workflow",
+    "code-review",
+    "hooks",
+    "engineering-method"
+  ]
+}
